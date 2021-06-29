@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="blue.jpg" style="display: block; width: 15em; height: 20em;" id="image1" >
+    <img src="brouwn.jpg" style="display: none; width: 15em; height: 20em;" id="image2" >
+    <img src="gold.jpg" style="display: none; width: 15em; height: 20em;" id="image3" >
+    
+
+
+    <input type="button" value="blue" class="image-button" id="btn-image" onclick="image1()" >
+    <input type="button" value="brouwn" class="image-button" id="btn-image" onclick="image2()" >
+    <input type="button" value="gold" class="image-button" id="btn-image" onclick="image3()" >
+
+</body>
+
+
+<script>
+
+function image1()
+{
+var x = document.getElementById("image1")
+var y = document.getElementById("image2")
+var z = document.getElementById("image3")
+
+x.style.display = "block";
+y.style.display = "none";
+z.style.display = "none";
+
+}
+
+function image2()
+{
+var x = document.getElementById("image1")
+var y = document.getElementById("image2")
+var z = document.getElementById("image3")
+
+x.style.display = "none";
+y.style.display = "block";
+z.style.display = "none";
+
+}
+
+function image3()
+{
+var x = document.getElementById("image1")
+var y = document.getElementById("image2")
+var z = document.getElementById("image3")
+
+x.style.display = "none";
+y.style.display = "none";
+z.style.display = "block";
+
+}
+
+
+
+
+</script>
+
+
+</html>
